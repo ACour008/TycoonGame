@@ -2,6 +2,6 @@
 ---
 Will update soon.
 
-2D-Isometric Grid Tool can be found at [TycoonGame / Assets / Scripts / GameGrid](https://github.com/ACour008/TycoonGame/tree/main/Assets/Scripts/GameGrid)
+2D-Isometric Grid Tool can be found at [TycoonGame / Assets / Scripts / GameGrid /](https://github.com/ACour008/TycoonGame/tree/main/Assets/Scripts/GameGrid)
 
-Finite State Machine can be found at 
+Finite State Machine can be found at [TycoonGame / Assets / Scripts / StateMachine /](https://github.com/ACour008/TycoonGame/tree/main/Assets/Scripts/StateMachine), it's implementation in [.. / Scripts / Input](https://github.com/ACour008/TycoonGame/tree/main/Assets/Scripts/Input).
