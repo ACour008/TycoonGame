@@ -10,32 +10,18 @@ public sealed class InputStateMachine : BaseStateMachine
     [SerializeField] string clickableTag;
 
     [SerializeField] Component[] components;
-
-    private InputActions inputActions;
+    InputController inputController;
 
     public IState CurrentState { get => _currentState; set => SetState(value); }
 
-    private void Awake()
-    {
-        _cachedComponents = CreateComponentCache();
-
-        InputController inputController = GetComponent<InputController>();
-        inputActions = inputController.Input;
-    }
 
     private void Start()
     {
+        _cachedComponents = CreateComponentCache();
+        inputController = GetComponent<InputController>();
+
         SetState(new SelectState(terrainTag));
     }
-
-    // Put this in Input Controller.
-    private void OnEnable()
-    {
-        inputActions.Enable();
-    }
-
-    // Put this in Input Controller.
-    private void OnDisable() => inputActions.Disable();
 
     public void OnBuildButtonPressed()
     {
@@ -61,12 +47,12 @@ public sealed class InputStateMachine : BaseStateMachine
     {
         if (!EventSystem.current.IsPointerOverGameObject())
         {
-            inputActions.Enable(); // Make this available through Input Controller.
+            inputController.EnableInput();
             _currentState.Execute(this);
         }
         else
         {
-            inputActions.Disable(); // Make this available through Input Controller.
+            inputController.DisableInput();
         }
     }
 

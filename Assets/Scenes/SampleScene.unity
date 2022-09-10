@@ -622,8 +622,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666533353}
-  - component: {fileID: 666533355}
   - component: {fileID: 666533354}
+  - component: {fileID: 666533355}
   - component: {fileID: 666533356}
   m_Layer: 0
   m_Name: Input
@@ -640,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666533352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9324439, y: 15.735887, z: 1.0937693}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

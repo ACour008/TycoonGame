@@ -15,4 +15,10 @@ public class InputController : MonoBehaviour
         _inputActions = new InputActions();
         _raycaster = new InputRaycaster2D(_inputActions);
     }
+
+    private void OnEnable() => _inputActions.Enable();
+    public void OnDisable() =>_inputActions.Disable();
+
+    public void EnableInput() => _inputActions.Enable();
+    public void DisableInput() => _inputActions.Disable();
 }
