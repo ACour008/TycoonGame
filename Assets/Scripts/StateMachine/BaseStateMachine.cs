@@ -7,7 +7,7 @@ public abstract class BaseStateMachine : MonoBehaviour
     protected IState _currentState;
     protected Dictionary<Type, Component> _cachedComponents;
 
-    protected abstract void SetState(IState newState);
+    public abstract void SetState(IState newState);
 
     protected abstract Dictionary<Type, Component> CreateComponentCache();
 

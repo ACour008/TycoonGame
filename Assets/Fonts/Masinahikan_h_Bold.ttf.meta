@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ef9eb8bb82a244b71b65d2b94e27f219
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Masinahikan
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3b61ec71622af4c2aab3ea0a27cadf3a, type: 3}
+  - {fileID: 12800000, guid: da1b9bca40d9047fb9057ae0ac13418f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -30,7 +30,7 @@ namespace Tests
         public void grid_cell_size_is_64()
         {
             GameGrid<int> grid = new GameGrid<int>(1, 1, new Vector2(64, 64));
-            Assert.AreEqual(64, grid.CellSize);
+            Assert.AreEqual(new Vector2(64, 64), grid.CellSize);
         }
 
         [Test]

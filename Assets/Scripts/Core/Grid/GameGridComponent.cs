@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 
+
 public class GameGridComponent : MonoBehaviour
 {
     [SerializeField] private int height;

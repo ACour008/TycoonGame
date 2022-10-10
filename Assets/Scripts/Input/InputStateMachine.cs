@@ -28,7 +28,7 @@ public sealed class InputStateMachine : BaseStateMachine
         SetState(new BuildState(clickableTag));
     }
 
-    protected override void SetState(IState newState)
+    public override void SetState(IState newState)
     {
         // How to handle if newState is already currentState??
 

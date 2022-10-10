@@ -26,7 +26,7 @@ public class SelectState : BaseState
         InputController inputController = machine.GetComponent<InputController>();
 
         this.hitLayers = machine.GetComponent<HitLayerSelector>().layers;
-        cameraController = machine.GetComponent<CameraController>();
+        this.cameraController = machine.GetComponent<CameraController>();
         this.inputActions = inputController.Input;
         this.raycaster = inputController.Raycaster;
 

@@ -12,7 +12,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
@@ -41,6 +40,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""name"": ""Zoom"",
                     ""type"": ""Button"",
                     ""id"": ""adbbc361-d501-4d3c-9368-df155413ae6b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Esc"",
+                    ""type"": ""Button"",
+                    ""id"": ""f11730c6-be5d-40dd-857f-18dba8b5d050"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -135,6 +143,17 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Zoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eeb1156a-f51a-4b89-8818-c7d692105cae"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Esc"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -266,6 +285,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Keyboard = asset.FindActionMap("Keyboard", throwIfNotFound: true);
         m_Keyboard_Pan = m_Keyboard.FindAction("Pan", throwIfNotFound: true);
         m_Keyboard_Zoom = m_Keyboard.FindAction("Zoom", throwIfNotFound: true);
+        m_Keyboard_Esc = m_Keyboard.FindAction("Esc", throwIfNotFound: true);
         // Mouse
         m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
         m_Mouse_Zoom = m_Mouse.FindAction("Zoom", throwIfNotFound: true);
@@ -333,12 +353,14 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private IKeyboardActions m_KeyboardActionsCallbackInterface;
     private readonly InputAction m_Keyboard_Pan;
     private readonly InputAction m_Keyboard_Zoom;
+    private readonly InputAction m_Keyboard_Esc;
     public struct KeyboardActions
     {
         private @InputActions m_Wrapper;
         public KeyboardActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Pan => m_Wrapper.m_Keyboard_Pan;
         public InputAction @Zoom => m_Wrapper.m_Keyboard_Zoom;
+        public InputAction @Esc => m_Wrapper.m_Keyboard_Esc;
         public InputActionMap Get() { return m_Wrapper.m_Keyboard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -354,6 +376,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Zoom.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnZoom;
                 @Zoom.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnZoom;
                 @Zoom.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnZoom;
+                @Esc.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnEsc;
+                @Esc.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnEsc;
+                @Esc.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnEsc;
             }
             m_Wrapper.m_KeyboardActionsCallbackInterface = instance;
             if (instance != null)
@@ -364,6 +389,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @Zoom.started += instance.OnZoom;
                 @Zoom.performed += instance.OnZoom;
                 @Zoom.canceled += instance.OnZoom;
+                @Esc.started += instance.OnEsc;
+                @Esc.performed += instance.OnEsc;
+                @Esc.canceled += instance.OnEsc;
             }
         }
     }
@@ -429,6 +457,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     {
         void OnPan(InputAction.CallbackContext context);
         void OnZoom(InputAction.CallbackContext context);
+        void OnEsc(InputAction.CallbackContext context);
     }
     public interface IMouseActions
     {

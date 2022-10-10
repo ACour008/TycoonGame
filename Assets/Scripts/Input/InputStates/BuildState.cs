@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildState : BaseState
@@ -12,6 +10,15 @@ public class BuildState : BaseState
     {
         this.machine = machine;
         Debug.Log("Entering Build State");
+
+        InputController inputController = machine.GetComponent<InputController>();
+
+        inputController.Input.Keyboard.Esc.performed += Esc_performed;
+    }
+
+    private void Esc_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        machine.SetState(new SelectState("Terrain"));
     }
 
     public override void Execute(BaseStateMachine machine)

@@ -1,0 +1,48 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Main/main-ui.uss?fileID=7433441132597879392&amp;guid=7cddfb94dea594133a430fee5df40868&amp;type=3#main-ui" />
+    <UIManager picking-mode="Ignore" name="UIManager" class="screen-container" style="flex-direction: column; flex-wrap: nowrap;">
+        <ui:VisualElement name="top-screen" picking-mode="Ignore" class="top-screen" style="flex-direction: row; justify-content: space-between; flex-shrink: 1; flex-grow: 0;">
+            <ui:VisualElement name="top-screen-left" picking-mode="Ignore" class="left" />
+            <ui:VisualElement name="top-screen-center" picking-mode="Ignore" class="center" style="flex-direction: column-reverse;">
+                <UIDialog name="UIDialog" class="dialog" style="flex-direction: column; display: none;">
+                    <ui:VisualElement name="categories-header" class="dialog-header" style="flex-direction: row; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0;">
+                        <ui:Button text="X" display-tooltip-when-elided="true" name="close-button" class="close-button" />
+                        <ui:Label text="CATEGORIES" display-tooltip-when-elided="true" name="categories-label" style="font-size: 28px; color: rgb(255, 255, 255); visibility: visible; margin-top: 2px; border-bottom-width: 0; margin-right: 2px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="categories-button-panel" class="dialog-panel" style="flex-direction: column;">
+                        <ui:VisualElement name="tabs" class="tab-container">
+                            <ui:Label text="Vendors" display-tooltip-when-elided="true" name="vendors-tab" class="tab-label selected-tab" />
+                            <ui:Label text="Attractions" display-tooltip-when-elided="true" name="attractions-tab" class="tab-label" />
+                            <ui:Label text="Rides" display-tooltip-when-elided="true" name="rides-tab" class="tab-label" />
+                            <ui:Label text="Utilities" display-tooltip-when-elided="true" name="utilities-tab" class="tab-label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="tab-contents" class="tab-contents">
+                            <ui:VisualElement name="vendors-contents" class="contents" style="align-items: center; justify-content: center;">
+                                <ui:Button text="Food" display-tooltip-when-elided="true" name="food-vendor-button" style="flex-shrink: 1; flex-basis: 125px; height: 125px;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="attractions-contents" class="contents unselected-content">
+                                <ui:Label text="ATTRACTIONS" display-tooltip-when-elided="true" class="content-text" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="rides-contents" class="contents unselected-content">
+                                <ui:Label text="RIDES" display-tooltip-when-elided="true" class="content-text" style="flex-grow: 1; -unity-text-align: middle-center;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="utilities-contents" class="contents unselected-content">
+                                <ui:Label text="UTILITIES" display-tooltip-when-elided="true" class="content-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </UIDialog>
+            </ui:VisualElement>
+            <ui:VisualElement name="top-screen-right" class="right" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom-screen" picking-mode="Ignore" class="bottom-screen">
+            <UIMainNavBar class="nav-bar" style="flex-direction: row; justify-content: space-between; margin-bottom: 20px; align-items: center;">
+                <ui:Button text="Map View" display-tooltip-when-elided="true" name="map-view-btn" class="nav-bar-btn" />
+                <ui:Button text="Stats" display-tooltip-when-elided="true" name="stats-btn" class="nav-bar-btn" />
+                <ui:Button text="BUILD" display-tooltip-when-elided="true" name="build-btn" class="nav-bar-btn" style="height: 175px; flex-basis: 175px; border-top-left-radius: 50%; border-bottom-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; flex-shrink: 1; flex-grow: 0;" />
+                <ui:Button text="Events" display-tooltip-when-elided="true" name="events-btn" class="nav-bar-btn" />
+                <ui:Button text="Special" display-tooltip-when-elided="true" name="special-btn" class="nav-bar-btn" />
+            </UIMainNavBar>
+        </ui:VisualElement>
+    </UIManager>
+</ui:UXML>
