@@ -42,17 +42,6 @@ public class GameGrid<T>
         this.cells = new T[this.height * this.width];
     }
 
-    public GameGrid(int height, int width, Vector2 cellSize, Vector2 originPosition, float heightOffset)
-    {
-        this.height = height;
-        this.width = width;
-        this.cellSize = cellSize;
-        this.originPosition = originPosition;
-        this.heightOffset = heightOffset;
-
-        this.cells = new T[this.height * this.width];
-    }
-
     // Turn Func into delegate with optional Transform
     public void CreateGrid(Func<GameGrid<T>, int, int, float, float, int, Transform, T> builderFunction)
     {
@@ -68,7 +57,6 @@ public class GameGrid<T>
 
             Vector2 isoPosition = CalculateIsometricPosition(x, y);
             int layerOrder = (i % width) + layerOffset;
-            isoPosition.y -= layerOrder * heightOffset;
 
             cells[i] = builderFunction(this, i % width, i / width, isoPosition.x, isoPosition.y * -1, layerOrder, parent.transform);
         }
@@ -76,7 +64,7 @@ public class GameGrid<T>
 
     public Vector2 GetPositionAt(int x, int y)
     {
-        Vector2 isoPosition = CalculateIsometricPosition(x + originPosition.x, y + originPosition.y);
+        Vector2 isoPosition = CalculateIsometricPosition(x, y) + originPosition;
         isoPosition.y *= -1;
 
         return isoPosition;
@@ -103,6 +91,6 @@ public class GameGrid<T>
 
     private Vector2 CalculateIsometricPosition(float x, float y)
     {
-        return new Vector2(x-y , (y+x) / 2);
+        return new Vector2( (x - y) * (cellSize.x / 2) / 100, (x + y) * (cellSize.y / 2) / 100);
     }
 }

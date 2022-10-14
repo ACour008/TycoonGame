@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Grass
   m_EditorClassIdentifier: 
   tileType: 4
-  tileSprite: {fileID: 1972455489, guid: 1776d738af35347708e490718a5312a4, type: 3}
+  tileSprite: {fileID: 795737337, guid: 1776d738af35347708e490718a5312a4, type: 3}
   maxHeight: 0.8

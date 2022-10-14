@@ -157,7 +157,7 @@ MonoBehaviour:
   width: 25
   cellSize: {x: 2, y: 2}
   originPosition: {x: -4, y: -4}
-  isoHeightOffset: 0.05
+  isoHeightOffset: 0
   terrainGenerator: {fileID: 106147232}
   cameraBoundarySetter: {fileID: 519420035}
 --- !u!4 &106147231
@@ -749,7 +749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1773941843
 MonoBehaviour:
   m_ObjectHideFlags: 0

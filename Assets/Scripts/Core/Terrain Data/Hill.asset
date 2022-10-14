@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hill
   m_EditorClassIdentifier: 
   tileType: 5
-  tileSprite: {fileID: -1166133488, guid: 1776d738af35347708e490718a5312a4, type: 3}
+  tileSprite: {fileID: 611656924, guid: 1776d738af35347708e490718a5312a4, type: 3}
   maxHeight: 0.9

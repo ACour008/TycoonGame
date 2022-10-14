@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81adee661a2634710bb3f40d4a9d32fd
+guid: 4b76df861beaf5c4793560c173ecc4d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Asset 2star dots_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 112
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a416425bf0970247b154dc6d29cd193
+      internalID: -1956210199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2star dots_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1
+        width: 112
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360ec76b34872a44cb1547899696da8f
+      internalID: -450752063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2star dots_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 112
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f8fbf6e58b1f0479f0163f13af544e
+      internalID: 1618856195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asset 2star dots_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 112
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6679f48a836aa2340957e9efa5115efd
+      internalID: 1169513836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +198,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asset 2star dots_2: 1618856195
+      Asset 2star dots_3: 1169513836
+      Asset 2star dots_0: -1956210199
+      Asset 2star dots_1: -450752063
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

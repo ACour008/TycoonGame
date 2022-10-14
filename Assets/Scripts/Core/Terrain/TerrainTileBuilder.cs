@@ -22,7 +22,7 @@ public class TerrainTileBuilder : IComponentBuilder<TerrainTile>
         terrainTile.Initialize(grid, tileType, terrainGenerator.TileSprites, xPosition, yPosition, layerOrder);
 
         terrainObject.transform.SetParent(parent);
-        terrainObject.transform.localScale = new Vector3(grid.CellSize.x, grid.CellSize.y, 1);
+        // terrainObject.transform.localScale = new Vector3(grid.CellSize.x, grid.CellSize.y, 1);
 
         collider.SetPath(0, new Vector2[4]
         {

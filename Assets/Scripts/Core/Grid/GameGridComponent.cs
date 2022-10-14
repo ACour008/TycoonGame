@@ -8,7 +8,6 @@ public class GameGridComponent : MonoBehaviour
     [SerializeField] private int width;
     [SerializeField] private Vector2 cellSize;
     [SerializeField] private Vector2 originPosition;
-    [SerializeField] private float isoHeightOffset;
     [SerializeField] private TerrainGenerator terrainGenerator;
     [SerializeField] private CameraBoundarySetter cameraBoundarySetter;
 
@@ -22,9 +21,9 @@ public class GameGridComponent : MonoBehaviour
         terrainGenerator.Setup(width, height);
         terrainBuilder = new TerrainTileBuilder(terrainGenerator);
 
-        gameGrid = new GameGrid<TerrainTile>(height, width, cellSize, originPosition, isoHeightOffset);
+        gameGrid = new GameGrid<TerrainTile>(height, width, cellSize, originPosition);
         gameGrid.CreateGrid(terrainBuilder.BuildComponent);
 
-        cameraBoundarySetter.SetupBoundaries(gameGrid, isoHeightOffset);
+        cameraBoundarySetter.SetupBoundaries(gameGrid);
     }
 }
