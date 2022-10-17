@@ -45,6 +45,19 @@ namespace Tests
             // Assert
             Assert.AreEqual(128, grid.GetValueAt(0, 0));
         }
+
+        [Test]
+        public void cartesian_points_remain_same_after_conversion_back()
+        {
+            GameGrid<int> grid = new GameGrid<int>(20, 20, new Vector2(100, 50));
+            int x = 100;
+            int y = 150;
+
+            Vector2 isoCoords = grid.CalculateIsometricPosition(x, y);
+            Vector2 cartesianCoords = grid.CalculateCartesianPosition(isoCoords.x, isoCoords.y);
+
+            Assert.AreEqual(new Vector2(x, y), cartesianCoords);
+        }
     }
 
 }

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: WaterDeep
   m_EditorClassIdentifier: 
   tileType: 0
-  tileSprite: {fileID: -1594578329, guid: 1776d738af35347708e490718a5312a4, type: 3}
-  maxHeight: 0.05
+  tileSprite: {fileID: 733269849, guid: 4254b27372cf84be8a5fa2fdacc3620c, type: 3}
+  maxHeight: 0.25
+  tileHeight: 10.5

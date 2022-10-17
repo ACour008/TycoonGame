@@ -153,11 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3603afdf17b844b97a52d1f8c2d2bf8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 25
-  width: 25
-  cellSize: {x: 2, y: 2}
+  height: 50
+  width: 50
+  cellSize: {x: 100, y: 50}
   originPosition: {x: -4, y: -4}
-  isoHeightOffset: 0
   terrainGenerator: {fileID: 106147232}
   cameraBoundarySetter: {fileID: 519420035}
 --- !u!4 &106147231
@@ -187,20 +186,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363849f6e824a466097cd12c2b287711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 0
+  seed: 675953
   octives: 4
-  lacunarity: 0.5
-  persistence: 1
-  scale: 25
+  lacunarity: 2
+  persistence: 0.5
+  scale: 250
   terrainRegions:
-  - {fileID: 11400000, guid: ccf0ca365530d4b72ae68526187b918a, type: 2}
   - {fileID: 11400000, guid: 653892ec39d1b479d810cee0475e3cdb, type: 2}
-  - {fileID: 11400000, guid: e54d3b565b80a421a8da4f99088a21ab, type: 2}
-  - {fileID: 11400000, guid: d8667bbffe4c04f5d983a482694f1b1e, type: 2}
   - {fileID: 11400000, guid: a9a0fee30076f45fe9d7c29c1060ab38, type: 2}
   - {fileID: 11400000, guid: 2d1bc0554ef214b628f500da16d7afc4, type: 2}
   - {fileID: 11400000, guid: 1737a851e3a9945ae9a5ddd49cbae9b8, type: 2}
-  - {fileID: 11400000, guid: 5c0caaeb2d7364a4787cdfc51b12b2ce, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

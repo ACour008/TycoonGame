@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1776d738af35347708e490718a5312a4
+guid: 4254b27372cf84be8a5fa2fdacc3620c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,173 +101,185 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new-Asset 100x50_0
+      name: nav-Asset 2new-blocks_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 61
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        y: 175
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1849e5b017c914a4ab94592878eb04ce
-      internalID: 795737337
+      spriteID: 3cccf5326e7f946d2925b9df89e341c6
+      internalID: -575540469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_1
+      name: nav-Asset 2new-blocks_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 61
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 131
+        y: 190
+        width: 101
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d262e93b204334db644a4a3f834473
-      internalID: 869842494
+      spriteID: dbc66def1a7e840128a5acb043a854e1
+      internalID: -1790343898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_2
+      name: nav-Asset 2new-blocks_2
       rect:
         serializedVersion: 2
-        x: 220
-        y: 61
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 261
+        y: 175
+        width: 102
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df53cea140a2c24da4ada435fbc98a5
-      internalID: -1633335505
+      spriteID: 9120d1990c1ab4b368f76a2b242305af
+      internalID: 733269849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_3
+      name: nav-Asset 2new-blocks_3
       rect:
         serializedVersion: 2
-        x: 330
-        y: 61
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 392
+        y: 150
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26c8004133ddddc4e96f7259bfe1585b
-      internalID: 1249304404
+      spriteID: 366dcc5ab8cf44f4ea305370a166507d
+      internalID: -693313136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_4
+      name: nav-Asset 2new-blocks_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        y: 76
+        width: 102
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf87908f77f77cd4c9a484393cdbe595
-      internalID: -1594578329
+      spriteID: 5679e42202ef94910a13269f226023d0
+      internalID: 586841707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_5
+      name: nav-Asset 2new-blocks_5
       rect:
         serializedVersion: 2
-        x: 110
-        y: 1
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 131
+        y: 16
+        width: 101
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76b8530e17bf544e8fb9814247279f4
-      internalID: 611656924
+      spriteID: eb139e624a398444195c4751db397d5c
+      internalID: 519374386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_6
+      name: nav-Asset 2new-blocks_6
       rect:
         serializedVersion: 2
-        x: 220
+        x: 261
         y: 1
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        width: 102
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 923a85c28725d794e9ecacbf1ebb6ccc
-      internalID: -1507309750
+      spriteID: ff21e60f06ec0441b813dc7e7f16c1fc
+      internalID: 2012687931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-Asset 100x50_7
+      name: nav-Asset 2new-blocks_7
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1
-        width: 100
-        height: 50
-      alignment: 9
-      pivot: {x: 0.5, y: 0.55}
+        x: 394
+        y: 75
+        width: 102
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0184cd58f013e0d48aad9aa39ce59278
-      internalID: -901561226
+      spriteID: 4bb6386d55c0840aeaefda19340c4e88
+      internalID: 209462964
       vertices: []
       indices: 
       edges: []
@@ -283,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      new-Asset 100x50_7: -901561226
-      new-Asset 100x50_5: 611656924
-      new-Asset 100x50_2: -1633335505
-      new-Asset 100x50_6: -1507309750
-      new-Asset 100x50_0: 795737337
-      new-Asset 100x50_4: -1594578329
-      new-Asset 100x50_3: 1249304404
-      new-Asset 100x50_1: 869842494
+      nav-Asset 2new-blocks_5: 519374386
+      nav-Asset 2new-blocks_3: -693313136
+      nav-Asset 2new-blocks_7: 209462964
+      nav-Asset 2new-blocks_0: -575540469
+      nav-Asset 2new-blocks_6: 2012687931
+      nav-Asset 2new-blocks_2: 733269849
+      nav-Asset 2new-blocks_1: -1790343898
+      nav-Asset 2new-blocks_4: 586841707
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

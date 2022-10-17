@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Sand
   m_EditorClassIdentifier: 
   tileType: 2
-  tileSprite: {fileID: 869842494, guid: 1776d738af35347708e490718a5312a4, type: 3}
+  tileSprite: {fileID: 586841707, guid: 4254b27372cf84be8a5fa2fdacc3620c, type: 3}
   maxHeight: 0.2
+  tileHeight: 20

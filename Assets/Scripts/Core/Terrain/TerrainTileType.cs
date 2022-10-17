@@ -1,11 +1,11 @@
 public enum TerrainTileType
 {
-    WATER_DEEP,
+    // WATER_DEEP,
     WATER,
-    SAND,
-    MARSH,
+    // SAND,
+    // MARSH,
     GRASS,
     HILL,
     ROCK,
-    SNOW
+    // SNOW
 }

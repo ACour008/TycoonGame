@@ -89,8 +89,16 @@ public class GameGrid<T>
         return (x >= 0 && x < width && y >= 0 && y < height);
     }
 
-    private Vector2 CalculateIsometricPosition(float x, float y)
+    // To Utils
+    public Vector2 CalculateIsometricPosition(float x, float y)
     {
         return new Vector2( (x - y) * (cellSize.x / 2) / 100, (x + y) * (cellSize.y / 2) / 100);
+    }
+
+    // To Utils
+    public Vector2Int CalculateCartesianPosition(float isoX, float isoY)
+    {
+        return new Vector2Int( (int)(2 * isoY + isoX), (int)(2 * isoY - isoX));
+        // return new Vector2( (isoX + isoY) * (cellSize.x / 2) / 100, (isoX - isoY) * (cellSize.y / 2) / 100);
     }
 }

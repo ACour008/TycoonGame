@@ -16,10 +16,13 @@ public class TerrainTileBuilder : IComponentBuilder<TerrainTile>
     {
         GameObject terrainObject = new GameObject("terrain", typeof(SpriteRenderer), typeof(TerrainTile), typeof(PolygonCollider2D));
         TerrainTile terrainTile = terrainObject.GetComponent<TerrainTile>();
-        TerrainTileType tileType = terrainGenerator.GetTerrainTypeForCoordinates(xCoord, yCoord);
+        TerrainData tileData = terrainGenerator.GetTerrainTypeForCoordinates(xCoord, yCoord);
         PolygonCollider2D collider = terrainObject.GetComponent<PolygonCollider2D>();
 
-        terrainTile.Initialize(grid, tileType, terrainGenerator.TileSprites, xPosition, yPosition, layerOrder);
+        TerrainTileType type = tileData.TileType;
+        float height = tileData.TileHeight / 100;
+        
+        terrainTile.Initialize(grid, type, terrainGenerator.TileSprites, xPosition, yPosition + height, layerOrder);
 
         terrainObject.transform.SetParent(parent);
         // terrainObject.transform.localScale = new Vector3(grid.CellSize.x, grid.CellSize.y, 1);

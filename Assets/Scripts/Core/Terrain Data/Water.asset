@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be47881df323d42f194fba447cef62aa, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  tileType: 1
-  tileSprite: {fileID: -1633335505, guid: 1776d738af35347708e490718a5312a4, type: 3}
-  maxHeight: 0.1
+  tileType: 0
+  tileSprite: {fileID: -1790343898, guid: 4254b27372cf84be8a5fa2fdacc3620c, type: 3}
+  maxHeight: 0.35
+  tileHeight: 17.5

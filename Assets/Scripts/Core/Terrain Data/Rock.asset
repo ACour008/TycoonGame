@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be47881df323d42f194fba447cef62aa, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  tileType: 6
-  tileSprite: {fileID: 1249304404, guid: 1776d738af35347708e490718a5312a4, type: 3}
-  maxHeight: 0.95
+  tileType: 3
+  tileSprite: {fileID: 519374386, guid: 4254b27372cf84be8a5fa2fdacc3620c, type: 3}
+  maxHeight: 1
+  tileHeight: 50
